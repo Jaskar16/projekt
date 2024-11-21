@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Login konteiner -->
+    <div class="login-container">
+        <form id="login-form" onsubmit="return validateForm(event)">
+            <h2>Logi sisse nigga</h2>
+            <div class="input-group">
+                <label for="username">Kasutajanimi</label>
+                <input type="text" id="username" name="username" required />
+            </div>
+            <div class="input-group">
+                <label for="password">Parool</label>
+                <input type="password" id="password" name="password" required />
+            </div>
+            <button type="submit">Logi sisse</button>
+            <p id="error-message" class="error"></p>
+        </form>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
